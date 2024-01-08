@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+body{
+    display: flex;
+    background-color: aquamarine;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.box1{
+    background-color: brown;
+}
+.box1:hover+.box2{
+    background-color:aquamarine;
+}
+.box2{
+    background-color: blueviolet;
+}
+.box2:hover+.box3{
+    order: 1;
+}
+.box3{
+    background-color: blue;
+}
+.box3:hover+.box4{
+    align-self: start;
+    background-color: cornsilk;
+}
+.box4{
+    background-color: green;
+}
+.box4:hover+.box5{
+    background-color: fuchsia;
+}
+.box5{
+    background-color: yellow;
+}
+.box5:hover+.box6{
+    align-self: flex-end;
+    background-color: brown;
+}
+.box6{
+    background-color: black;
+}
+.box6:hover+.box7{
+    background-color: midnightblue;
+    color:yellow;
+    border-radius: 10px;
+    border: 2px solid black;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px;
+}
+.box7{
+    background-color: red;
+}
+.box7:hover+.box8{
+    order:-1;
+}
+
+.box8{
+    background-color: hotpink;
+}
+.box8:hover+.box9{
+    transform: scale(1.2);
+    background-color: rebeccapurple;
+    border-radius: 15px;
+}
+.box9{
+    background-color: white;
+}
+.box9:hover+.box10{
+    border: 5px solid blue;
+    background-color:lime ;
+}
+.box10{
+    background-color: teal;
+}
+.box10:hover+.box11 +.box12{
+    border-radius: 50px; 
+}
+.box10:hover+.box11{
+        transform: scale(1.2);
+        background-color: crimson;
+}
+.box11{
+    background-color: peru;
+}
+.box11:hover+.box12{
+    background-color: black;
+    color: red;
+    box-shadow: 0 0 20px 10px;
+    transform: rotate(2500deg);
+}
+.box12{
+    background-color: lawngreen;
+}
